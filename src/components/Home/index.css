@@ -1,0 +1,13 @@
+.categeries-container{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item{
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
