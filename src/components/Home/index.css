@@ -11,3 +11,20 @@
     padding: 10px;
     margin: 20px;
 }
+
+.category-link{
+    text-decoration: none;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.home-bg-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.spin-container{
+    align-self: center;
+    margin: 50px;
+}
