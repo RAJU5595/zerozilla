@@ -10,9 +10,27 @@
     justify-content: space-between;
     padding: 10px;
 }
+.cart-container{
+    display: flex;
+    align-items: center;
+}
 
 .input-container{
     width: 60%;
     height: 30px;
     border-radius: 5px;
+}
+
+.cart-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:40px;
+    height:40px;
+    margin:10px;
+    font-weight: bold;
+    background-color: rgb(161, 175, 171);
+    border-radius: 50px;
 }

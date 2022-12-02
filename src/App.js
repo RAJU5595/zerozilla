@@ -10,15 +10,19 @@ function App() {
   const [cart,setCart] = useState([])
 
   const setCartItems = (item) =>{
-      setCart(prevState=>{
-        const id = prevState.find(eachItem=> eachItem.product.id === item.id)
-        if(id){
-          return [...prevState]
-        }
-        else{
-          return [...prevState,{product:{...item},quantity:1}]
-        }
-      })
+    setCart(prevState => {
+      const product = prevState.find(eachItem => eachItem.id === item.id)
+      if(product){
+        const updatedList = prevState.map(eachItem => {
+          if(eachItem.id===product.id){
+            return {...eachItem,quantity:eachItem.quantity+1}
+          }
+          return eachItem
+        })
+        return [...updatedList]
+      }
+      return [...prevState,{...item,quantity:1}]
+    })
   }
 
   return (
