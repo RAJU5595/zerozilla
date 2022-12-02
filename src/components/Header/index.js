@@ -5,7 +5,6 @@ import './index.css'
 const Header = () => {
     const ctx = useContext(CartContext)
     let count=0
-
     ctx.cart.map(eachItem => count+=eachItem.quantity)
 
     return(
